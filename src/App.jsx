@@ -52,13 +52,18 @@ const App=()=> {
 
   return (
     <>
+    <div className="app-container">
+      <h1 className="app-title">📝 My Todo List</h1>
+      <div className="input-section">
       <AddTodo item={item} setItem={setItem} addItem={addItem} />
       <SearchBox searchValue={searchValue} setSearchValue={setSearchValue} />
+      </div>
       <TodoList 
-  todos={displayTodos} 
-  onToggle={handleChange} 
-  onDelete={deleteItem} 
-/>
+      todos={displayTodos} 
+      onToggle={handleChange} 
+      onDelete={deleteItem} 
+      />
+      </div>
     </>
   )
 }
