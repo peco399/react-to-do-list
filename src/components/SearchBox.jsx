@@ -3,6 +3,8 @@ return (
     <div>
     <input 
         type="text" 
+        id="search-input"
+        name="search-input"
         value={searchValue} 
         onChange={e => setSearchValue(e.target.value)}
         placeholder="検索..."
