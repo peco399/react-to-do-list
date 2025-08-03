@@ -3,6 +3,8 @@ const TodoItem = ({ todo, onToggle, onDelete }) => {
     <li className="todo-item">
       <input 
         type="checkbox" 
+        id="checkbox"
+        name="checkbox"
         checked={todo.isDone} 
         onChange={e => onToggle(todo.id, e)} 
       />

@@ -3,6 +3,8 @@ return (
     <div>
     <input 
         type="text" 
+        id="todo-input"
+        name="todo-input"
         value={item} 
         onChange={e => setItem(e.target.value)} 
         placeholder="新しいTodoを入力"
